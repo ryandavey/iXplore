@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iXplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kOW-JN-8hq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RHb-yZ-cQH"/>
+                                    <constraint firstAttribute="height" constant="300" id="xc8-L7-1ms"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RHb-yZ-cQH"/>
+                                        <exclude reference="xc8-L7-1ms"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jTx-Vq-zPk">
+                                <rect key="frame" x="0.0" y="300" width="560" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jTx-Vq-zPk" firstAttribute="top" secondItem="kOW-JN-8hq" secondAttribute="bottom" constant="8" id="0Ir-JB-ylr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jTx-Vq-zPk" secondAttribute="leading" id="9Jt-Hj-VPI"/>
+                            <constraint firstItem="kOW-JN-8hq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Bgo-vo-Rzp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kOW-JN-8hq" secondAttribute="trailing" constant="-20" id="F8S-oG-Aa0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kOW-JN-8hq" secondAttribute="trailing" constant="-20" id="HJu-XK-1TB"/>
+                            <constraint firstItem="kOW-JN-8hq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Hnb-ft-pOf"/>
+                            <constraint firstItem="jTx-Vq-zPk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="288" id="IC2-ak-TWH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kOW-JN-8hq" secondAttribute="bottom" constant="300" id="JMe-CH-gBa"/>
+                            <constraint firstItem="jTx-Vq-zPk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wfu-uQ-OTv"/>
+                            <constraint firstItem="jTx-Vq-zPk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-20" id="Y5w-Ie-XW0"/>
+                            <constraint firstItem="kOW-JN-8hq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bwz-16-UQa"/>
+                            <constraint firstItem="kOW-JN-8hq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="eJ6-YI-2ZP"/>
+                            <constraint firstItem="kOW-JN-8hq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jEj-z8-K0K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jTx-Vq-zPk" secondAttribute="trailing" id="oAq-Th-8jJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jTx-Vq-zPk" secondAttribute="bottom" constant="11" id="pEN-3S-9bK"/>
+                            <constraint firstItem="jTx-Vq-zPk" firstAttribute="top" secondItem="kOW-JN-8hq" secondAttribute="bottom" id="vkF-53-U1I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jTx-Vq-zPk" secondAttribute="bottom" id="zw1-6z-j6I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bgo-vo-Rzp"/>
+                                <exclude reference="F8S-oG-Aa0"/>
+                                <exclude reference="jEj-z8-K0K"/>
+                                <exclude reference="0Ir-JB-ylr"/>
+                                <exclude reference="9Jt-Hj-VPI"/>
+                                <exclude reference="IC2-ak-TWH"/>
+                                <exclude reference="oAq-Th-8jJ"/>
+                                <exclude reference="JMe-CH-gBa"/>
+                                <exclude reference="pEN-3S-9bK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kOW-JN-8hq" id="OXr-zw-Jro"/>
+                        <outlet property="tableView" destination="jTx-Vq-zPk" id="iJR-id-PjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="332"/>
+        </scene>
+    </scenes>
+</document>
