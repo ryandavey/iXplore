@@ -17,7 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var spotList: [Spot] = Spot.spotList()
     
-    func setupMapView () {
+    func
+        setupMapView () {
         self.mapView.mapType = .Hybrid
     }
     
